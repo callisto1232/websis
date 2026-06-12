@@ -10,6 +10,9 @@ A sleek, lightweight, full-stack hardware telemetry node designed for Linux envi
 - **IO Networking Throughput:** Real-time differential delta counters computing true download and upload speeds in MB/s.
 - **Application Load Rankings:** High-frequency task parsing tracking top resource-heavy processes running natively in the background workspace.
 
+<img width="1122" height="846" alt="image" src="https://github.com/user-attachments/assets/cbdb836e-1abc-4bea-94d9-f7a59f37c678" />
+
+
 ## 🏗️ Project Architecture
 
 ```text
