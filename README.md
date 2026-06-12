@@ -1,21 +1,23 @@
-<<<<<<< HEAD
-# React + Vite
+# H.A.M.S. // Hardware Monitor Server
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A sleek, lightweight, full-stack hardware telemetry node designed for Linux environments. This system utilizes a lightweight **FastAPI** daemon to pull native hardware benchmarks via `psutil` and streams live metrics to an interactive, responsive **React (Vite)** dashboard panel using high-frequency polling.
 
-Currently, two official plugins are available:
+## 🚀 Core Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Live CPU Matrix:** Individual multi-core scaling tracks with real-time clock frequency tracking and integrated thermal monitoring.
+- **Historical Activity Plots:** Active SVG vector timelines rendering a continuous 30-second rolling graph of overall processing loads.
+- **Volumetric Memory Gauges:** Interactive SVG radial donut arcs displaying active virtual RAM allocations and Swap space saturation.
+- **IO Networking Throughput:** Real-time differential delta counters computing true download and upload speeds in MB/s.
+- **Application Load Rankings:** High-frequency task parsing tracking top resource-heavy processes running natively in the background workspace.
 
-## React Compiler
+## 🏗️ Project Architecture
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-=======
-# websis
-Your Linux system status on web
->>>>>>> 1998821f8e8d7625842f748823e44251577b5e66
+```text
+websis/
+├── server.py             # FastAPI backend engine (Telemery Collector)
+└── websis/               # Frontend React Application
+    ├── src/
+    │   ├── App.jsx       # Interface Viewport & SVG Layout Engines
+    │   └── main.jsx      # Vite Render Root Entry
+    ├── package.json      # Node Dependency Tree Node
+    └── vite.config.js    # Bundler Configurations
